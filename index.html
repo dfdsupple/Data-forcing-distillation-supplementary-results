@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Forcing Distillation — Supplementary Video Results</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Data Forcing Distillation</h1>
+  <p class="subtitle">Supplementary Video Results — NeurIPS</p>
+  <p class="description">
+    Qualitative comparison across the teacher model, our method, DMD2, and DP-DMD on text-to-video
+    generation. Each row shows the four methods' outputs for the same prompt.
+  </p>
+</header>
+
+<main>
+  <!-- Header row with method labels -->
+  <section class="method-header">
+    <div class="prompt-cell"></div>
+    <div class="method-label">Teacher</div>
+    <div class="method-label our-label">Ours</div>
+    <div class="method-label">DMD2</div>
+    <div class="method-label">DP-DMD</div>
+  </section>
+
+  <!-- Prompt 0006 -->
+  <section class="row">
+    <div class="prompt-cell">
+      <span class="prompt-tag">Prompt 1</span>
+      <p>Anime-style mischievous cat batting at a ball of yarn in a cozy living room.</p>
+    </div>
+    <div class="video-cell" data-label="Teacher">
+      <video src="videos/prompt0006_teacher.mp4" autoplay loop muted playsinline preload="metadata"></video>
+    </div>
+    <div class="video-cell our-cell" data-label="Ours">
+      <video src="videos/prompt0006_ours.mp4" autoplay loop muted playsinline preload="metadata"></video>
+    </div>
+    <div class="video-cell" data-label="DMD2">
+      <video src="videos/prompt0006_dmd2.mp4" autoplay loop muted playsinline preload="metadata"></video>
+    </div>
+    <div class="video-cell" data-label="DP-DMD">
+      <video src="videos/prompt0006_dpdmd.mp4" autoplay loop muted playsinline preload="metadata"></video>
+    </div>
+  </section>
+
+  <!-- Prompt 0008 -->
+  <section class="row">
+    <div class="prompt-cell">
+      <span class="prompt-tag">Prompt 2</span>
+      <p>Animated traditional Japanese village at sunset with glowing paper lanterns and falling cherry blossoms.</p>
+    </div>
+    <div class="video-cell" data-label="Teacher">
+      <video src="videos/prompt0008_teacher.mp4" autoplay loop muted playsinline preload="metadata"></video>
+    </div>
+    <div class="video-cell our-cell" data-label="Ours">
+      <video src="videos/prompt0008_ours.mp4" autoplay loop muted playsinline preload="metadata"></video>
+    </div>
+    <div class="video-cell" data-label="DMD2">
+      <video src="videos/prompt0008_dmd2.mp4" autoplay loop muted playsinline preload="metadata"></video>
+    </div>
+    <div class="video-cell" data-label="DP-DMD">
+      <video src="videos/prompt0008_dpdmd.mp4" autoplay loop muted playsinline preload="metadata"></video>
+    </div>
+  </section>
+
+  <!-- Prompt 0011 -->
+  <section class="row">
+    <div class="prompt-cell">
+      <span class="prompt-tag">Prompt 3</span>
+      <p>An animated princess and men in tuxedos interacting cheerfully by a grand clock tower at night.</p>
+    </div>
+    <div class="video-cell" data-label="Teacher">
+      <video src="videos/prompt0011_teacher.mp4" autoplay loop muted playsinline preload="metadata"></video>
+    </div>
+    <div class="video-cell our-cell" data-label="Ours">
+      <video src="videos/prompt0011_ours.mp4" autoplay loop muted playsinline preload="metadata"></video>
+    </div>
+    <div class="video-cell" data-label="DMD2">
+      <video src="videos/prompt0011_dmd2.mp4" autoplay loop muted playsinline preload="metadata"></video>
+    </div>
+    <div class="video-cell" data-label="DP-DMD">
+      <video src="videos/prompt0011_dpdmd.mp4" autoplay loop muted playsinline preload="metadata"></video>
+    </div>
+  </section>
+
+  <!-- Prompt 0045 -->
+  <section class="row">
+    <div class="prompt-cell">
+      <span class="prompt-tag">Prompt 4</span>
+      <p>Cartoon-style bright red vintage steam train chugging across rolling green hills under a bright sky.</p>
+    </div>
+    <div class="video-cell" data-label="Teacher">
+      <video src="videos/prompt0045_teacher.mp4" autoplay loop muted playsinline preload="metadata"></video>
+    </div>
+    <div class="video-cell our-cell" data-label="Ours">
+      <video src="videos/prompt0045_ours.mp4" autoplay loop muted playsinline preload="metadata"></video>
+    </div>
+    <div class="video-cell" data-label="DMD2">
+      <video src="videos/prompt0045_dmd2.mp4" autoplay loop muted playsinline preload="metadata"></video>
+    </div>
+    <div class="video-cell" data-label="DP-DMD">
+      <video src="videos/prompt0045_dpdmd.mp4" autoplay loop muted playsinline preload="metadata"></video>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>Videos autoplay and loop. Click any video to control playback.</p>
+</footer>
+</body>
+</html>
