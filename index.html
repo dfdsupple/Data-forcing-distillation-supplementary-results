@@ -12,99 +12,314 @@
   <p class="subtitle">Supplementary Video Results — NeurIPS</p>
   <p class="description">
     Qualitative comparison across the teacher model, our method, DMD2, and DP-DMD on text-to-video
-    generation. Each row shows the four methods' outputs for the same prompt.
+    and image-to-video generation. Each row shows the four methods' outputs for the same prompt or input image.
   </p>
 </header>
 
 <main>
-  <!-- Header row with method labels -->
-  <section class="method-header">
-    <div class="prompt-cell"></div>
-    <div class="method-label">Teacher</div>
-    <div class="method-label our-label">Ours</div>
-    <div class="method-label">DMD2</div>
-    <div class="method-label">DP-DMD</div>
+
+  <!-- ===== Text-to-Video ===== -->
+  <div class="section-title">Text-to-Video Generation</div>
+  <section class="task-section">
+
+    <div class="method-header">
+      <div class="prompt-cell"></div>
+      <div class="method-label">Teacher</div>
+      <div class="method-label our-label">Ours</div>
+      <div class="method-label">DMD2</div>
+      <div class="method-label">DP-DMD</div>
+    </div>
+
+    <div class="row">
+      <div class="prompt-cell">
+        <span class="prompt-tag">Prompt 1</span>
+        <p>Anime-style mischievous cat batting at a ball of yarn in a cozy living room.</p>
+      </div>
+      <div class="video-cell" data-label="Teacher">
+        <video src="videos/prompt0006_teacher.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell our-cell" data-label="Ours">
+        <video src="videos/prompt0006_ours.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell" data-label="DMD2">
+        <video src="videos/prompt0006_dmd2.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell" data-label="DP-DMD">
+        <video src="videos/prompt0006_dpdmd.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="prompt-cell">
+        <span class="prompt-tag">Prompt 2</span>
+        <p>Animated traditional Japanese village at sunset with glowing paper lanterns and falling cherry blossoms.</p>
+      </div>
+      <div class="video-cell" data-label="Teacher">
+        <video src="videos/prompt0008_teacher.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell our-cell" data-label="Ours">
+        <video src="videos/prompt0008_ours.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell" data-label="DMD2">
+        <video src="videos/prompt0008_dmd2.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell" data-label="DP-DMD">
+        <video src="videos/prompt0008_dpdmd.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="prompt-cell">
+        <span class="prompt-tag">Prompt 3</span>
+        <p>An animated princess and men in tuxedos interacting cheerfully by a grand clock tower at night.</p>
+      </div>
+      <div class="video-cell" data-label="Teacher">
+        <video src="videos/prompt0011_teacher.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell our-cell" data-label="Ours">
+        <video src="videos/prompt0011_ours.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell" data-label="DMD2">
+        <video src="videos/prompt0011_dmd2.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell" data-label="DP-DMD">
+        <video src="videos/prompt0011_dpdmd.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="prompt-cell">
+        <span class="prompt-tag">Prompt 4</span>
+        <p>Cartoon-style bright red vintage steam train chugging across rolling green hills under a bright sky.</p>
+      </div>
+      <div class="video-cell" data-label="Teacher">
+        <video src="videos/prompt0045_teacher.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell our-cell" data-label="Ours">
+        <video src="videos/prompt0045_ours.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell" data-label="DMD2">
+        <video src="videos/prompt0045_dmd2.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell" data-label="DP-DMD">
+        <video src="videos/prompt0045_dpdmd.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+    </div>
+
   </section>
 
-  <!-- Prompt 0006 -->
-  <section class="row">
-    <div class="prompt-cell">
-      <span class="prompt-tag">Prompt 1</span>
-      <p>Anime-style mischievous cat batting at a ball of yarn in a cozy living room.</p>
+  <!-- ===== Image-to-Video ===== -->
+  <div class="section-title">Image-to-Video Generation</div>
+  <section class="task-section">
+
+    <div class="method-header">
+      <div class="prompt-cell"></div>
+      <div class="method-label">Teacher</div>
+      <div class="method-label our-label">Ours</div>
+      <div class="method-label">DMD2</div>
+      <div class="method-label">DP-DMD</div>
     </div>
-    <div class="video-cell" data-label="Teacher">
-      <video src="videos/prompt0006_teacher.mp4" autoplay loop muted playsinline preload="metadata"></video>
+
+    <div class="row">
+      <div class="prompt-cell">
+        <span class="prompt-tag">Sample 1</span>
+      </div>
+      <div class="video-cell" data-label="Teacher">
+        <video src="videos/i2v/teacher/student_step35_v2w1_0_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell our-cell" data-label="Ours">
+        <video src="videos/i2v/ours/student_step4_v2w1_0_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell" data-label="DMD2">
+        <video src="videos/i2v/dmd2/student_step4_v2w1_0_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell" data-label="DP-DMD">
+        <video src="videos/i2v/dpdmd/student_step4_v2w1_0_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
     </div>
-    <div class="video-cell our-cell" data-label="Ours">
-      <video src="videos/prompt0006_ours.mp4" autoplay loop muted playsinline preload="metadata"></video>
+
+    <div class="row">
+      <div class="prompt-cell">
+        <span class="prompt-tag">Sample 2</span>
+      </div>
+      <div class="video-cell" data-label="Teacher">
+        <video src="videos/i2v/teacher/student_step35_v2w1_4_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell our-cell" data-label="Ours">
+        <video src="videos/i2v/ours/student_step4_v2w1_4_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell" data-label="DMD2">
+        <video src="videos/i2v/dmd2/student_step4_v2w1_4_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell" data-label="DP-DMD">
+        <video src="videos/i2v/dpdmd/student_step4_v2w1_4_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
     </div>
-    <div class="video-cell" data-label="DMD2">
-      <video src="videos/prompt0006_dmd2.mp4" autoplay loop muted playsinline preload="metadata"></video>
+
+    <div class="row">
+      <div class="prompt-cell">
+        <span class="prompt-tag">Sample 3</span>
+      </div>
+      <div class="video-cell" data-label="Teacher">
+        <video src="videos/i2v/teacher/student_step35_v2w1_6_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell our-cell" data-label="Ours">
+        <video src="videos/i2v/ours/student_step4_v2w1_6_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell" data-label="DMD2">
+        <video src="videos/i2v/dmd2/student_step4_v2w1_6_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell" data-label="DP-DMD">
+        <video src="videos/i2v/dpdmd/student_step4_v2w1_6_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
     </div>
-    <div class="video-cell" data-label="DP-DMD">
-      <video src="videos/prompt0006_dpdmd.mp4" autoplay loop muted playsinline preload="metadata"></video>
+
+    <div class="row">
+      <div class="prompt-cell">
+        <span class="prompt-tag">Sample 4</span>
+      </div>
+      <div class="video-cell" data-label="Teacher">
+        <video src="videos/i2v/teacher/student_step35_v2w1_7_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell our-cell" data-label="Ours">
+        <video src="videos/i2v/ours/student_step4_v2w1_7_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell" data-label="DMD2">
+        <video src="videos/i2v/dmd2/student_step4_v2w1_7_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell" data-label="DP-DMD">
+        <video src="videos/i2v/dpdmd/student_step4_v2w1_7_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
     </div>
+
+    <div class="row">
+      <div class="prompt-cell">
+        <span class="prompt-tag">Sample 5</span>
+      </div>
+      <div class="video-cell" data-label="Teacher">
+        <video src="videos/i2v/teacher/student_step35_v2w1_9_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell our-cell" data-label="Ours">
+        <video src="videos/i2v/ours/student_step4_v2w1_9_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell" data-label="DMD2">
+        <video src="videos/i2v/dmd2/student_step4_v2w1_9_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell" data-label="DP-DMD">
+        <video src="videos/i2v/dpdmd/student_step4_v2w1_9_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="prompt-cell">
+        <span class="prompt-tag">Sample 6</span>
+      </div>
+      <div class="video-cell" data-label="Teacher">
+        <video src="videos/i2v/teacher/student_step35_v2w1_15_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell our-cell" data-label="Ours">
+        <video src="videos/i2v/ours/student_step4_v2w1_15_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell" data-label="DMD2">
+        <video src="videos/i2v/dmd2/student_step4_v2w1_15_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell" data-label="DP-DMD">
+        <video src="videos/i2v/dpdmd/student_step4_v2w1_15_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="prompt-cell">
+        <span class="prompt-tag">Sample 7</span>
+      </div>
+      <div class="video-cell" data-label="Teacher">
+        <video src="videos/i2v/teacher/student_step35_v2w1_21_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell our-cell" data-label="Ours">
+        <video src="videos/i2v/ours/student_step4_v2w1_21_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell" data-label="DMD2">
+        <video src="videos/i2v/dmd2/student_step4_v2w1_21_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell" data-label="DP-DMD">
+        <video src="videos/i2v/dpdmd/student_step4_v2w1_21_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="prompt-cell">
+        <span class="prompt-tag">Sample 8</span>
+      </div>
+      <div class="video-cell" data-label="Teacher">
+        <video src="videos/i2v/teacher/student_step35_v2w1_27_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell our-cell" data-label="Ours">
+        <video src="videos/i2v/ours/student_step4_v2w1_27_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell" data-label="DMD2">
+        <video src="videos/i2v/dmd2/student_step4_v2w1_27_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell" data-label="DP-DMD">
+        <video src="videos/i2v/dpdmd/student_step4_v2w1_27_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="prompt-cell">
+        <span class="prompt-tag">Sample 9</span>
+      </div>
+      <div class="video-cell" data-label="Teacher">
+        <video src="videos/i2v/teacher/student_step35_v2w1_36_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell our-cell" data-label="Ours">
+        <video src="videos/i2v/ours/student_step4_v2w1_36_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell" data-label="DMD2">
+        <video src="videos/i2v/dmd2/student_step4_v2w1_36_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell" data-label="DP-DMD">
+        <video src="videos/i2v/dpdmd/student_step4_v2w1_36_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="prompt-cell">
+        <span class="prompt-tag">Sample 10</span>
+      </div>
+      <div class="video-cell" data-label="Teacher">
+        <video src="videos/i2v/teacher/student_step35_v2w1_43_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell our-cell" data-label="Ours">
+        <video src="videos/i2v/ours/student_step4_v2w1_43_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell" data-label="DMD2">
+        <video src="videos/i2v/dmd2/student_step4_v2w1_43_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell" data-label="DP-DMD">
+        <video src="videos/i2v/dpdmd/student_step4_v2w1_43_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="prompt-cell">
+        <span class="prompt-tag">Sample 11</span>
+      </div>
+      <div class="video-cell" data-label="Teacher">
+        <video src="videos/i2v/teacher/student_step35_v2w1_54_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell our-cell" data-label="Ours">
+        <video src="videos/i2v/ours/student_step4_v2w1_54_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell" data-label="DMD2">
+        <video src="videos/i2v/dmd2/student_step4_v2w1_54_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+      <div class="video-cell" data-label="DP-DMD">
+        <video src="videos/i2v/dpdmd/student_step4_v2w1_54_seed_student_1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+      </div>
+    </div>
+
   </section>
 
-  <!-- Prompt 0008 -->
-  <section class="row">
-    <div class="prompt-cell">
-      <span class="prompt-tag">Prompt 2</span>
-      <p>Animated traditional Japanese village at sunset with glowing paper lanterns and falling cherry blossoms.</p>
-    </div>
-    <div class="video-cell" data-label="Teacher">
-      <video src="videos/prompt0008_teacher.mp4" autoplay loop muted playsinline preload="metadata"></video>
-    </div>
-    <div class="video-cell our-cell" data-label="Ours">
-      <video src="videos/prompt0008_ours.mp4" autoplay loop muted playsinline preload="metadata"></video>
-    </div>
-    <div class="video-cell" data-label="DMD2">
-      <video src="videos/prompt0008_dmd2.mp4" autoplay loop muted playsinline preload="metadata"></video>
-    </div>
-    <div class="video-cell" data-label="DP-DMD">
-      <video src="videos/prompt0008_dpdmd.mp4" autoplay loop muted playsinline preload="metadata"></video>
-    </div>
-  </section>
-
-  <!-- Prompt 0011 -->
-  <section class="row">
-    <div class="prompt-cell">
-      <span class="prompt-tag">Prompt 3</span>
-      <p>An animated princess and men in tuxedos interacting cheerfully by a grand clock tower at night.</p>
-    </div>
-    <div class="video-cell" data-label="Teacher">
-      <video src="videos/prompt0011_teacher.mp4" autoplay loop muted playsinline preload="metadata"></video>
-    </div>
-    <div class="video-cell our-cell" data-label="Ours">
-      <video src="videos/prompt0011_ours.mp4" autoplay loop muted playsinline preload="metadata"></video>
-    </div>
-    <div class="video-cell" data-label="DMD2">
-      <video src="videos/prompt0011_dmd2.mp4" autoplay loop muted playsinline preload="metadata"></video>
-    </div>
-    <div class="video-cell" data-label="DP-DMD">
-      <video src="videos/prompt0011_dpdmd.mp4" autoplay loop muted playsinline preload="metadata"></video>
-    </div>
-  </section>
-
-  <!-- Prompt 0045 -->
-  <section class="row">
-    <div class="prompt-cell">
-      <span class="prompt-tag">Prompt 4</span>
-      <p>Cartoon-style bright red vintage steam train chugging across rolling green hills under a bright sky.</p>
-    </div>
-    <div class="video-cell" data-label="Teacher">
-      <video src="videos/prompt0045_teacher.mp4" autoplay loop muted playsinline preload="metadata"></video>
-    </div>
-    <div class="video-cell our-cell" data-label="Ours">
-      <video src="videos/prompt0045_ours.mp4" autoplay loop muted playsinline preload="metadata"></video>
-    </div>
-    <div class="video-cell" data-label="DMD2">
-      <video src="videos/prompt0045_dmd2.mp4" autoplay loop muted playsinline preload="metadata"></video>
-    </div>
-    <div class="video-cell" data-label="DP-DMD">
-      <video src="videos/prompt0045_dpdmd.mp4" autoplay loop muted playsinline preload="metadata"></video>
-    </div>
-  </section>
 </main>
 
 <footer>
